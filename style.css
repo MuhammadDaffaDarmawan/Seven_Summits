@@ -1,0 +1,266 @@
+* {
+    border: 1px solid black;
+}
+
+html {
+    Scroll-behavior: smooth;
+
+}
+
+body {
+    font-family: arial;
+
+}
+
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+ul.topnav li {
+    float: right;
+}
+
+ul.topnav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+ul.topnav li a:hover:not(.active) {
+    background-color: #111;
+}
+
+ul.topnav li a.active {
+    background-color: #28377f;
+}
+
+ul.topnav li.left {
+    float: left;
+}
+
+.jumbotron {
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 80px 40px;
+    color: white;
+    background-color: #ccc;
+    background-image: url('image/1.jpg');
+    background-size: cover;
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.4;
+}
+
+.jumbotron h1,
+.jumbotron h2 {
+    margin-bottom: -10px;
+    position: relative;
+}
+
+.jumbotron h3,
+.jumbotron p {
+    position: relative;
+}
+
+.jumbotron button {
+    border: 2px solid white;
+    background-color: transparent;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    position: relative;
+}
+
+.jumbotron button:hover {
+    border: 2px solid #28377f;
+    background-color: #28377f;
+}
+
+.tentang {
+    width: 1000px;
+    margin: 30px auto;
+    min-height: 400px;
+}
+
+.tentang img {
+    float: left;
+    margin-right: 20px;
+}
+
+.row-galeri {
+    box-sizing: border-box;
+    background-color: #eee;
+    padding: 15px;
+}
+
+.galeri {
+    margin: 0px auto;
+    padding-top: 5px;
+    min-height: 500px;
+    width: 1200px;
+    background-color: #eee;
+    overflow: auto;
+}
+
+.thumbnail {
+    background-color: white;
+    text-align: center;
+    padding: 10px;
+    width: 360px;
+    margin: 10px;
+    float: left;
+}
+
+.thumbnail img {
+    width: 100%;
+}
+
+.thumbnail h2 {
+    margin-bottom: -10px;
+}
+
+.thumbnail button {
+    margin-top: -10px;
+    background-color: transparent;
+    color: black;
+    padding: 5px 30px;
+    border: 2px solid black;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.thumbnail button:hover {
+    border: 2px solid #28377f;
+    background-color: #28377f;
+    color: white;
+}
+
+.pendaftaran {
+    width: 1000px;
+    margin: 50px auto;
+    min-height: 700px;
+}
+
+.pic {
+    margin-top: 60px;
+    float: right;
+}
+
+.form {
+    width: 570px;
+    height: 600px;
+    border-radius: 5px;
+    background-color: #28377f;
+    color: white;
+    padding: 20px;
+}
+
+label {
+    padding: 12px 12px 12px 0;
+    display: block;
+}
+
+input[type=text],
+select,
+textarea {
+    width: 95%;
+    padding: 12px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    resize: vertical;
+}
+
+select {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    margin-top: 20px;
+    width: 100%;
+    background-color: white;
+    color: black;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #333;
+    border: 2px solid white;
+    color: white;
+    font-weight: bold;
+}
+
+
+.footer {
+    clear: both;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.footer a {
+    text-decoration: none;
+    color: white;
+}
+
+@media screen and (max-width: 600px) {
+
+    ul.topnav li.left,
+    ul.topnav li,
+    .pic {
+        float: none;
+    }
+
+    .tentang,
+    .galeri {
+        width: 100%;
+    }
+
+    .tentang img,
+    .tentang p {
+        margin: 20px;
+    }
+
+    .thumbnail {
+        margin-left: 35px;
+    }
+
+    .pic {
+        margin-left: 55px;
+    }
+
+    .pendaftaran h1,
+    .form {
+        width: 400px;
+        margin-left: 20px;
+    }
+
+    html,
+    body {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+}
